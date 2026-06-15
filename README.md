@@ -15,17 +15,27 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ---
 
-📁 src/
-├── app/
-│   └── Main.java
-│
-└── model/
-    ├── Cliente.java
-    ├── Contacto.java
-    └── Direccion.java
-
+LlanquihueTourApp/
+├── src/
+│   ├── app/
+│   │   └── Main.java
+│   ├── model/
+│   │   ├── Persona.java
+│   │   ├── Cliente.java
+│   │   ├── Proveedor.java
+│   │   ├── Operador.java
+│   │   ├── Contacto.java
+│   │   ├── Direccion.java
+│   │   └── Tour.java
+│   ├── data/
+│   │   └── GestorDatos.java
+│   ├── ui/
+│   │   └── Main.java
+│   └── resources/
+│       └── tours.txt
+├── .gitignore
+└── README.md
 ---
-
 
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
