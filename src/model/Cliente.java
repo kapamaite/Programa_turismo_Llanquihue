@@ -1,8 +1,6 @@
 package model;
 
-public class Cliente {
-    private String nombre;
-    private Contacto contacto;
+public class Cliente extends Persona {
     private Direccion direccion;
     private String tipoCliente;
 
@@ -11,25 +9,24 @@ public class Cliente {
                    Contacto contacto,
                    Direccion direccion,
                    String tipoCliente) {
-        this.nombre = nombre;
-        this.contacto = contacto;
+        super(rut, nombre, contacto);
         this.direccion = direccion;
         this.tipoCliente = tipoCliente;
     }
-    public String getRut(){
-        return nombre;
-    }
-    public String getNombre() {
-        return nombre;
-    }
+
     public Direccion getDireccion() {
         return direccion;
     }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
+    }
+
     public String getTipoCliente() {
         return tipoCliente;
     }
 
-    public Contacto getContacto() {
-        return contacto;
+    public void setTipoCliente(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
 }

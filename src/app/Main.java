@@ -16,7 +16,7 @@ public class Main {
                        "Los Lagos");
 
         Cliente cliente = new Cliente(
-                "20888333-2",
+                "20998333-2",
                 "Lady Stardust",
                 contactoCliente,
                 direccion,

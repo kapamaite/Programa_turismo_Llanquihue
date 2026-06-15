@@ -3,18 +3,22 @@ package model;
 /** Representa un proveedor de servicios
  *
  */
-public class Proveedor {
-    private final String servicio;
+public class Proveedor extends Persona {
+    private String servicio;
 
     public Proveedor(String rut,
                      String nombre,
                      Contacto contacto,
                      String servicio) {
-        super();
+        super(rut, nombre, contacto);
         this.servicio = servicio;
     }
 
     public String getServicio() {
         return servicio;
+    }
+
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
     }
 }

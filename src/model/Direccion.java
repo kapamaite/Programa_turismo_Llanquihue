@@ -3,7 +3,7 @@ package model;
 /** Representa una dirección fisica
  *
  */
-public class Direccion{
+public class Direccion {
     private String calle;
     private int numero;
     private String comuna;
@@ -11,14 +11,17 @@ public class Direccion{
     private String region;
 
     public Direccion(String calle,
-                     int i, String comuna,
+                     int numero,
+                     String comuna,
                      String ciudad,
                      String region) {
         this.calle = calle;
         this.numero = numero;
+        this.comuna = comuna;
         this.ciudad = ciudad;
         this.region = region;
     }
+
     public String getCalle() {
         return calle;
     }
@@ -33,6 +36,9 @@ public class Direccion{
     }
     public String getComuna() {
         return comuna;
+    }
+    public void setComuna(String comuna) {
+        this.comuna = comuna;
     }
     public String getCiudad() {
         return ciudad;

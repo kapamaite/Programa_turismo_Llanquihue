@@ -1,12 +1,15 @@
-
 package model;
+
 public class Persona {
 
     private String rut;
     private String nombre;
-    private Persona contacto;
+    private Contacto contacto;
 
     public Persona(String rut, String nombre, Contacto contacto) {
+        this.rut = rut;
+        this.nombre = nombre;
+        this.contacto = contacto;
     }
 
     public String getRut() {
@@ -14,7 +17,7 @@ public class Persona {
     }
 
     public void setRut(String rut) {
-        String rut1 = this.rut;
+        this.rut = rut;
     }
 
     public String getNombre() {
@@ -25,11 +28,11 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public Persona getContacto() {
+    public Contacto getContacto() {
         return contacto;
     }
 
-    public void setContacto(Persona contacto) {
+    public void setContacto(Contacto contacto) {
         this.contacto = contacto;
     }
 }

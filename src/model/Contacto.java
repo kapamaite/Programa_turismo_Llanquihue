@@ -1,7 +1,4 @@
 package model;
-
-import java.io.InputStream;
-
 /** Representa la creacion de una persona
  *
  */

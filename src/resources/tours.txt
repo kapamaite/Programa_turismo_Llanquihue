@@ -1,0 +1,5 @@
+Ruta del Queso;gastronomico;4;25000
+Paseo LAgo Llanquihue;lacustre;3;18000
+Tour Volcan Osorno; culutral;6;35000
+Cena Tipica Sureña;gastronomico;2;15000
+Excursion Saltos del Petrohue;cultural;5;30000
