@@ -14,7 +14,6 @@ Este proyecto corresponde a la Evaluación Final Transversal de la asignatura *D
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas reales y proponiendo una solución estructurada, modular y reutilizable.
 
 ---
-
 LlanquihueTourApp/
 ├── src/
 │   ├── app/
@@ -29,6 +28,10 @@ LlanquihueTourApp/
 │   │   └── Tour.java
 │   ├── data/
 │   │   └── GestorDatos.java
+│   ├── service/
+│   │   └── TourService.java
+│   ├── util/
+│   │   └── Validador.java
 │   ├── ui/
 │   │   └── Main.java
 │   └── resources/
