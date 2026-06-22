@@ -15,4 +15,14 @@ public class Operador extends Persona{
     public String getEmpresa(){
         return empresa;
     }
+
+
+    @Override
+    public String toString() {
+        return "Operador{" +
+                "rut='" + getRut() + '\'' +
+                ", nombre='" + getNombre() + '\'' +
+                ", empresa='" + empresa + '\'' +
+                '}';
+    }
 }

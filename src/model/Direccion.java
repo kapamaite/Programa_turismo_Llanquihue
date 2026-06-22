@@ -52,4 +52,15 @@ public class Direccion {
     public void setRegion(String region) {
         this.region = region;
     }
+
+    @Override
+    public String toString() {
+        return "Direccion{" +
+                "calle='" + calle + '\'' +
+                ", numero=" + numero +
+                ", comuna='" + comuna + '\'' +
+                ", ciudad='" + ciudad + '\'' +
+                ", region='" + region + '\'' +
+                '}';
+    }
 }

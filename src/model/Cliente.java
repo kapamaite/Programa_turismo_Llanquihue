@@ -29,4 +29,14 @@ public class Cliente extends Persona {
     public void setTipoCliente(String tipoCliente) {
         this.tipoCliente = tipoCliente;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "rut='" + getRut() + '\'' +
+                ", nombre='" + getNombre() + '\'' +
+                ", tipoCliente='" + tipoCliente + '\'' +
+                ", direccion=" + direccion +
+                '}';
+    }
 }

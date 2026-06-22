@@ -21,4 +21,13 @@ public class Proveedor extends Persona {
     public void setServicio(String servicio) {
         this.servicio = servicio;
     }
+
+    @Override
+    public String toString() {
+        return "Proveedor{" +
+                "rut='" + getRut() + '\'' +
+                ", nombre='" + getNombre() + '\'' +
+                ", servicio='" + servicio + '\'' +
+                '}';
+    }
 }

@@ -22,4 +22,12 @@ public class Contacto {
     public void setCorreo(String correo) {
         this.correo= correo;
     }
+
+    @Override
+    public String toString() {
+        return "Contacto{" +
+                "telefono='" + telefono + '\'' +
+                ", correo='" + correo + '\'' +
+                '}';
+    }
 }

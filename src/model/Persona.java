@@ -35,4 +35,14 @@ public class Persona {
     public void setContacto(Contacto contacto) {
         this.contacto = contacto;
     }
+
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "rut='" + rut + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", contacto=" + contacto +
+                '}';
+    }
 }
