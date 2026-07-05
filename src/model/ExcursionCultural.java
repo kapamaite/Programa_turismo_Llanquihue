@@ -17,4 +17,8 @@ public class ExcursionCultural extends ServicioTuristico {
         return "ExcursionCultural{" + super.toString() +
                 ", lugarHistorico='" + lugarHistorico + "'}";
     }
+    @Override
+    public void mostrarInformacion() {
+        System.out.println("ExcursionCultural - " + getNombre() + ", Duración: " + getDuracionHoras() + " horas, Lugar: " + lugarHistorico);
+    }
 }

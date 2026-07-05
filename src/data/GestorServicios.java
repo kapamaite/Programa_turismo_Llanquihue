@@ -1,26 +1,32 @@
 package data;
 
+import model.ServicioTuristico;
 import model.RutaGastronomica;
 import model.PaseoLacustre;
 import model.ExcursionCultural;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GestorServicios {
 
-    public void mostrarServicios() {
-        RutaGastronomica ruta1 = new RutaGastronomica("Ruta del Queso", 4, 5);
-        RutaGastronomica ruta2 = new RutaGastronomica("Sabores del Sur", 3, 3);
+    private List<ServicioTuristico> servicios = new ArrayList<>();
 
-        PaseoLacustre paseo1 = new PaseoLacustre("Paseo Lago Llanquihue", 2, "Lancha");
-        PaseoLacustre paseo2 = new PaseoLacustre("Tour Lago Todos los Santos", 3, "Catamarán");
+    public GestorServicios() {
+        servicios.add(new RutaGastronomica("Ruta del Queso", 4, 5));
+        servicios.add(new RutaGastronomica("Sabores del Sur", 3, 3));
+        servicios.add(new PaseoLacustre("Paseo Lago Llanquihue", 2, "Lancha"));
+        servicios.add(new PaseoLacustre("Tour Lago Todos los Santos", 3, "Catamarán"));
+        servicios.add(new ExcursionCultural("Visita Puerto Montt", 5, "Casa del Arte"));
+        servicios.add(new ExcursionCultural("Historia de Llanquihue", 4, "Museo Regional"));
+    }
 
-        ExcursionCultural excursion1 = new ExcursionCultural("Visita Puerto Montt", 5, "Casa del Arte");
-        ExcursionCultural excursion2 = new ExcursionCultural("Historia de Llanquihue", 4, "Museo Regional");
+    public List<ServicioTuristico> getServicios() {
+        return servicios;
+    }
 
-        System.out.println(ruta1);
-        System.out.println(ruta2);
-        System.out.println(paseo1);
-        System.out.println(paseo2);
-        System.out.println(excursion1);
-        System.out.println(excursion2);
+    public void mostrarTodos() {
+        for (ServicioTuristico servicio : servicios) {
+            servicio.mostrarInformacion();
+        }
     }
 }
