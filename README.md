@@ -23,6 +23,65 @@ Se extendió la jerarquía de clases de la agencia **Llanquihue Tour** incorpora
 - **GestorServicios**: almacena los servicios en una `List<ServicioTuristico>` y los recorre invocando `mostrarInformacion()`.
 
 ---
+![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
+
+# 🧠 Semana 7 – Polimorfismo y Colecciones Genéricas
+## 👤 Autor del proyecto
+- **Nombre completo:** Maite Quezada
+- **Carrera:** Ingeniería en Informática
+- **Sede:** Online, Santiago
+
+---
+
+## 📘 Descripción de lo desarrollado esta semana
+
+Se extendió la jerarquía de clases de la agencia **Llanquihue Tour** incorporando polimorfismo y colecciones genéricas. Se agregó el método `mostrarInformacion()` a la superclase `ServicioTuristico` y se sobrescribió en cada subclase para mostrar información específica según el tipo de servicio. Los objetos se almacenan en una colección `List<ServicioTuristico>` y se recorren de forma polimórfica mediante un bucle for-each.
+
+---
+
+## 🏗️ Clases modificadas
+
+- **ServicioTuristico**: se agregó el método `mostrarInformacion()` como implementación base.
+- **RutaGastronomica**: sobrescribe `mostrarInformacion()` mostrando nombre, duración y número de paradas.
+- **PaseoLacustre**: sobrescribe `mostrarInformacion()` mostrando nombre, duración y tipo de embarcación.
+- **ExcursionCultural**: sobrescribe `mostrarInformacion()` mostrando nombre, duración y lugar histórico.
+- **GestorServicios**: almacena los servicios en una `List<ServicioTuristico>` y los recorre invocando `mostrarInformacion()`.
+
+---
+
+## 📁 Estructura del proyecto
+
+LlanquihueTourApp/
+├── src/
+│   ├── app/
+│   │   └── Main.java
+│   ├── model/
+│   │   ├── Persona.java
+│   │   ├── Cliente.java
+│   │   ├── Proveedor.java
+│   │   ├── Operador.java
+│   │   ├── Contacto.java
+│   │   ├── Direccion.java
+│   │   ├── Tour.java
+│   │   ├── ServicioTuristico.java
+│   │   ├── RutaGastronomica.java
+│   │   ├── PaseoLacustre.java
+│   │   └── ExcursionCultural.java
+│   ├── data/
+│   │   ├── GestorDatos.java
+│   │   └── GestorServicios.java
+│   ├── service/
+│   │   └── TourService.java
+│   ├── util/
+│   │   └── Validador.java
+│   ├── ui/
+│   │   └── Main.java
+│   └── resources/
+│       └── tours.txt
+├── .gitignore
+└── README.md
+
+---
 
 ## ⚙️ Instrucciones para compilar y ejecutar
 
